@@ -1,0 +1,14 @@
+# Graph is just promoter concentration as a fcn of rxn time
+# No transcription or translation, just straight chemical kinetics
+# R + P -k1/k-1-> RP_c -k2/k-2-> RP_o
+# We know (assuming [R] >> [P]_total, SS for RP_c, and equil lies far to right)
+
+P_total = 100 # arbitrary units
+
+n = 10000 # number of data points
+t_beg = 0 # minutes, start time of simulation
+t_end = 10 # minutes, end time of simulation
+t = t_beg:(t_end-t_beg)/n:t_end
+
+
+# RP_o = [P]_total * (1-e^-(k_obs*t))

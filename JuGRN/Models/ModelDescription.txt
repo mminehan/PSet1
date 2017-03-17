@@ -1,0 +1,34 @@
+#=
+
+To estimate optimal models properly, first run include("AdjDriver.jl") from inside the model_x folder, 
+then close and reopen julia and run include("estimate_model_parameters_driver.jl")
+
+*Need to close is a bug. Sometimes will run infinitely if AdjDriver and estimate_model_parameters_driver are run in same session
+
+To rank the models, run include("rank_models.jl") from Model directory
+
+model_7 was unable to run properly with new conditions, but had poor results in earlier tests
+
+AdjSimulation code in the estimate_model_parameters_driver is commented out for speed
+
+Problem 2 Model data is included in the Prob2 folder
+
+The sensitivity data for problem 2 is generated via include("AdjDriver.jl")
+from inside the Prob2 folder
+
+Problem 3 Model data is included in the Models Folder
+
+All error optimization is performed with the include("estimate_model_parameters_driver.jl")
+from inside the model_X directory
+
+Inputs to the code generation tools can be found in Model_Inputs folder
+
+Models 1-5 induce gene_1, models 6-7 induce gene_2
+
+Models 4,7 have 18 params
+Models 1,3,5,6 have 21 params
+Model 2 has 24 params
+
+
+
+=#

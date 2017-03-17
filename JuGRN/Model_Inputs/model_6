@@ -1,0 +1,3 @@
+gene_2 inhibits gene_3
+gene_3 inhibits gene_1
+gene_1 inhibits gene_3
